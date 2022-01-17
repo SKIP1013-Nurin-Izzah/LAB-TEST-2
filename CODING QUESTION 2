@@ -1,0 +1,30 @@
+package selfProgramming;
+import java.util.Scanner;
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner (System.in);
+		
+		double baseArea, surfaceArea, volume;
+		double radius, height;
+		
+		System.out.println("Please enter the radius of cylinder: ");
+		radius = input.nextDouble();
+		
+		System.out.println("Please enter the height of cylinder: ");
+		height = input.nextDouble();
+		
+		baseArea = Math.PI*radius*radius;
+		System.out.printf("Base area of cylinder is: %.2f" ,baseArea);
+		
+		surfaceArea = 2.0*Math.PI*radius + (2.0*baseArea);
+		System.out.printf("\nSurface Area of cylinder is: %.2f" ,surfaceArea);
+	
+		volume = baseArea*height;
+		System.out.printf("\nVolume of the cylinder is: %.2f" ,volume);
+	}
+	
+
+}
