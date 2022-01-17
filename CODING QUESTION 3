@@ -1,0 +1,28 @@
+package selfProgramming;
+import java.util.Scanner;
+public class TimeTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner (System.in);
+		
+		int [][]a = new int[11][11];
+		int size;
+		
+		System.out.println("Enter the size: ");
+		size = input.nextInt();
+		
+		
+		for(int i = 1; i<11; i++)
+		{
+			for(int j = 0; j<10; j++)
+			{
+				a[i][j] = i+(j*i);
+				System.out.printf("%4d ", a[i][j]);
+			}
+			System.out.println();
+		}
+	}
+
+}
